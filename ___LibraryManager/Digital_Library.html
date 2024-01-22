@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Library</title>
+    <link rel="stylesheet" href="Digital_Library.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+
+    <div class="whole">
+
+
+
+        <div class="frontPage" id="frontPage">
+            <div class="upperMost">
+                <div class="links">
+                    <ul>
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="headText">
+
+                    <h3>Knowledge Treasure at you fingertips</h3>
+
+                </div>
+
+                <div class="links smallLinks">
+                    <ul>
+                        <li><a href=""><span class="material-symbols-outlined">
+                                    info
+                                </span></a></li>
+                        <li><a href=""><span class="material-symbols-outlined">
+                                    question_mark
+                                </span></a></li>
+
+                        <li><a href=""><span class="material-symbols-outlined">
+                                    location_on
+                                </span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="secondUpper">
+
+
+
+
+
+                <div class="up">
+                    <div class="logo">
+                        <h1>The Digital Library</h1>
+
+                    </div>
+                    <div class="searchbar">
+                        <input type="search" name="" id="" placeholder="search">
+                        <button>Go</button>
+
+                    </div>
+
+                    <div class="myAccount">
+
+                        <span class="material-symbols-outlined" onclick="MemberShip()">
+                            workspace_premium
+                        </span>
+                        <span class="material-symbols-outlined" onclick="Show_hide()">
+                            account_circle
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="myAccountdiv" id="AccountDiv">
+                    <div class="divHead">
+                        <h3>Person1</h3>
+                        <span class="material-symbols-outlined">
+                            edit
+                        </span>
+
+                        <div class="headImage">
+                            <img src="images/account.png" alt="">
+
+                        </div>
+
+                    </div>
+                    <div class="divBody">
+                        <h3>Account holder Name</h3>
+                        <h5>Account holder Email</h5>
+                        <div class="keys">
+                            <span class="material-symbols-outlined">
+                                key
+                            </span>
+                            <span class="material-symbols-outlined">
+                                location_on
+                            </span>
+                            <span class="material-symbols-outlined">
+                                credit_card
+                            </span>
+
+                        </div>
+
+                        <div class="sync">
+
+                            <span class="material-symbols-outlined">
+                                sync
+                            </span>
+                            <p>Sync Accounts </p>
+
+
+                        </div>
+                        <div class="manage">
+                            <span class="material-symbols-outlined">
+                                manage_accounts
+                            </span>
+                            <p>Manage Your Accounts</p>
+
+                        </div>
+                        <hr>
+                        <div class="otherProfiles">
+                            <div class="settings">
+                                <p>Other Profiles</p>
+                                <span class="material-symbols-outlined">
+                                    settings
+                                </span>
+
+                            </div>
+                            <div class="guest">
+                                <span class="material-symbols-outlined">
+                                    person
+                                </span>
+                                <p>Guest</p>
+
+
+
+                            </div>
+                            <div class="addMore">
+                                <span class="material-symbols-outlined">
+                                    add
+                                </span>
+                                <p>add</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Membership form -->
+                <div class="memberShip" id="memberShip">
+                    <h2>Become a Premium User</h2>
+                    <div class="register">
+
+                        <h3><span>Not registered yet?</span><a href="" onclick="ShowForm()">Register Now</a></h3>
+
+                    </div>
+                    <input type="text" name="" id="" placeholder="Your Name">
+                    <input type="email" name="" id="" placeholder="Your Emial">
+                    <input type="number" name="" id="" placeholder="Contact Number">
+                    <input type="password" name="" id="" placeholder="*Password*">
+                    <div class="checkbox">
+                        <h3>You are-</h3>
+                        <input type="checkbox" name="" id=""> <span>Student</span>
+                        <input type="checkbox" name="" id=""> <span>Teacher</span>
+                        <input type="checkbox" name="" id=""> <span>Other</span>
+                    </div>
+
+                    <button>Submit</button>
+
+
+
+                </div>
+
+
+                <!-- Sign Up -->
+
+
+
+                <div class="sign-in" id="SignUp">
+                    <h1>Sign Up</h1>
+                    <div class="socialmediaicons">
+                        <ul>
+                            <li><a href="#" class="fa fa-google-plus"></a></li>
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-yahoo"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+
+                        </ul>
+                    </div>
+                    <p>or use your e-mail</p>
+                    <input type="email" name="" id="" placeholder="email">
+                    <input type="password" name="" id="" placeholder="Password">
+                    <p><a href="">Forgot Password?</a></p>
+                    <button>Sign in</button>
+
+                </div>
+
+
+
+
+
+
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#frontPage">Home</a></li>
+                        <li><a href="#Category_Section">Categories</a></li>
+                        <li><a href="#Content_Section">Content</a></li>
+                        <li><a href="#AudioBooks_Section">Audio Books</a></li>
+                        <li><a href="">Buy/Rent</a></li>
+                        <li><a href="#footer">About Us</a></li>
+                        <li><a href="#footer">Contact Us</a></li>
+
+
+                    </ul>
+
+
+                </nav>
+
+            </div>
+
+
+            <div class="FrontImage">
+
+                <div class="articles">
+                    <h1>Welcome to the <br>
+                        World of Books</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam nihil soluta aliquam ipsam magni
+                        odit.
+                    </p>
+                    <button> <a href="#explorerpage">Explore</a><span class="material-symbols-outlined">
+                            trending_flat
+                        </span></button>
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+        <section class="explorerPage" id="explorerpage">
+            <h1>Explore the best of Digital Library</h1>
+
+            <div class="explorercards">
+                <div class="paraSection">
+                    <h2>We Provide</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione fugiat harum blanditiis error
+                        saepe obcaecati. Dolor veritatis illum totam! Dolores doloremque, corporis tempore aspernatur
+                        quidem dolore accusantium. Laborum fugiat autem impedit id, culpa suscipit ducimus numquam
+                        deserunt consequuntur saepe praesentium.
+                    </p>
+
+                </div>
+
+                <div class="expCard">
+                    <h2>Quality Study MAterials</h2>
+                    <button>View</button>
+
+                </div>
+                <div class="expCard">
+                    <h2>Best Authors</h2>
+                    <button>View</button>
+
+                </div>
+                <div class="expCard">
+
+                    <h2>Great Novels & Biographies</h2>
+                    <button>View</button>
+
+                </div>
+                <div class="expCard">
+                    <h2>Current affairs</h2>
+                    <button>View</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <div class="secondPage" id="Content_Section">
+            <div class="head">
+                <h2>Our Recomnedations</h2>
+
+            </div>
+
+            <div class="container">
+
+                <div class="card" style="--clr:#03a9f4">
+                    <div class="image">
+                        <img src="images/card.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Book - <span>Book Name</span></h2>
+                        <h2>Author - <span>Author Name</span></h2>
+                        <h3>Description</h3>
+                        <p>Published on <span>dd-mm-yy</span> Available in 20 different languages. </p>
+                        <a href="http://127.0.0.1:5500/___LibraryManager/BuyBooks.html">Buy/Rent</a>
+                    </div>
+
+                </div>
+
+
+                <div class="card" style="--clr:#03a9f4">
+                    <div class="image">
+                        <img src="images/card.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Book - <span>Book Name</span></h2>
+                        <h2>Author - <span>Author Name</span></h2>
+                        <h3>Description</h3>
+                        <p>Published on <span>dd-mm-yy</span> Available in 20 different languages. </p>
+                        <a href="http://127.0.0.1:5500/___LibraryManager/BuyBooks.html">Buy/Rent</a>
+                    </div>
+
+                </div>
+
+                <div class="card" style="--clr:#03a9f4">
+                    <div class="image">
+                        <img src="images/card.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Book - <span>Book Name</span></h2>
+                        <h2>Author - <span>Author Name</span></h2>
+                        <h3>Description</h3>
+                        <p>Published on <span>dd-mm-yy</span> Available in 20 different languages. </p>
+                        <a href="http://127.0.0.1:5500/___LibraryManager/BuyBooks.html">Buy/Rent</a>
+                    </div>
+
+                </div>
+                <div class="card" style="--clr:#009688">
+                    <div class="image">
+                        <img src="images/card.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Book - <span>Book Name</span></h2>
+                        <h2>Author - <span>Author Name</span></h2>
+                        <h3>Description</h3>
+                        <p>Published on <span>dd-mm-yy</span> Available in 20 different languages. </p>
+                        <a href="http://127.0.0.1:5500/___LibraryManager/BuyBooks.html">Buy/Rent</a>
+                    </div>
+
+                </div>
+                <div class="card" style="--clr:#009688">
+                    <div class="image">
+                        <img src="images/card.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Book - <span>Book Name</span></h2>
+                        <h2>Author - <span>Author Name</span></h2>
+                        <h3>Description</h3>
+                        <p>Published on <span>dd-mm-yy</span> Available in 20 different languages. </p>
+                        <a href="http://127.0.0.1:5500/___LibraryManager/BuyBooks.html">Buy/Rent</a>
+                    </div>
+
+                </div>
+                <div class="card" style="--clr:#009688">
+                    <div class="image">
+                        <img src="images/card.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Book - <span>Book Name</span></h2>
+                        <h2>Author - <span>Author Name</span></h2>
+                        <h3>Description</h3>
+                        <p>Published on <span>dd-mm-yy</span> Available in 20 different languages. </p>
+                        <a href="http://127.0.0.1:5500/___LibraryManager/BuyBooks.html">Buy/Rent</a>
+                    </div>
+
+                </div>
+                <div class="card" style="--clr:#ff3e7f">
+                    <div class="image">
+                        <img src="images/card.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Book - <span>Book Name</span></h2>
+                        <h2>Author - <span>Author Name</span></h2>
+                        <h3>Description</h3>
+                        <p>Published on <span>dd-mm-yy</span> Available in 20 different languages. </p>
+                        <a href="http://127.0.0.1:5500/___LibraryManager/BuyBooks.html">Buy/Rent</a>
+                    </div>
+
+                </div>
+                <div class="card" style="--clr:#ff3e7f">
+                    <div class="image">
+                        <img src="images/card.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Book - <span>Book Name</span></h2>
+                        <h2>Author - <span>Author Name</span></h2>
+                        <h3>Description</h3>
+                        <p>Published on <span>dd-mm-yy</span> Available in 20 different languages. </p>
+                        <a href="http://127.0.0.1:5500/___LibraryManager/BuyBooks.html">Buy/Rent</a>
+                    </div>
+
+                </div>
+                <div class="card" style="--clr:#ff3e7f">
+                    <div class="image">
+                        <img src="images/card.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Book - <span>Book Name</span></h2>
+                        <h2>Author - <span>Author Name</span></h2>
+                        <h3>Description</h3>
+                        <p>Published on <span>dd-mm-yy</span> Available in 20 different languages. </p>
+                        <a href="http://127.0.0.1:5500/___LibraryManager/BuyBooks.html"
+                            onclick="Click_action()">Buy/Rent</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="thirdPage" id="Category_Section">
+            <div class="heading">
+                <h1>Our Books</h1>
+                <!-- <div class="filterLanguage">
+                    <h4>Switch Language</h4>
+                    <span>Hindi</span><input type="checkbox" name="" id="">
+                    <span>English</span><input type="checkbox" name="" id="">
+                </div> -->
+            </div>
+
+
+            <div class="CategoriesCards">
+
+                <div class="categoryCard">
+                    <div class="categoryimage">
+
+                    </div>
+                    <h2>Science</h2>
+                    <button><a href="http://127.0.0.1:5500/___LibraryManager/Content.html">Go</a></button>
+
+                </div>
+                <div class="categoryCard">
+                    <div class="categoryimage novel">
+
+                    </div>
+                    <h2>Novels</h2>
+                    <button><a href="http://127.0.0.1:5500/___LibraryManager/Content.html">Go</a></button>
+
+                </div>
+                <div class="categoryCard">
+                    <div class="categoryimage story">
+
+                    </div>
+                    <h2>Stories</h2>
+                    <button><a href="http://127.0.0.1:5500/___LibraryManager/Content.html">Go</a></button>
+                </div>
+                <div class="categoryCard">
+                    <div class="categoryimage sci-fi">
+
+                    </div>
+                    <h2>Sci-fi</h2>
+                    <button><a href="http://127.0.0.1:5500/___LibraryManager/Content.html">Go</a></button>
+
+                </div>
+                <div class="categoryCard">
+                    <div class="categoryimage bio">
+
+                    </div>
+                    <h2>Biographies</h2>
+                    <button><a href="http://127.0.0.1:5500/___LibraryManager/Content.html">Go</a></button>
+                </div>
+                <div class="categoryCard">
+                    <div class="categoryimage history">
+
+                    </div>
+                    <h2>Historical</h2>
+                    <button><a href="http://127.0.0.1:5500/___LibraryManager/Content.html">Go</a></button>
+                </div>
+                <div class="categoryCard">
+                    <div class="categoryimage geo">
+
+                    </div>
+                    <h2>Geograpgy</h2>
+                    <button><a href="http://127.0.0.1:5500/___LibraryManager/Content.html">Go</a></button>
+
+                </div>
+                <div class="categoryCard">
+                    <div class="categoryimage politics">
+
+                    </div>
+                    <h2>Political science</h2>
+                    <button><a href="http://127.0.0.1:5500/___LibraryManager/Content.html">Go</a></button>
+
+                </div>
+                <div class="categoryCard">
+                    <div class="categoryimage comics">
+
+                    </div>
+                    <h2>Comics</h2>
+                    <button><a href="http://127.0.0.1:5500/___LibraryManager/Content.html">Go</a></button>
+
+                </div>
+                <div class="categoryCard">
+                    <div class="categoryimage magazine">
+
+                    </div>
+                    <h2>Magazines</h2>
+                    <button><a href="http://127.0.0.1:5500/___LibraryManager/Content.html">Go</a></button>
+
+                </div>
+                <div class="categoryCard">
+                    <div class="categoryimage encyclopedia">
+
+                    </div>
+                    <h2>Encyclopedia</h2>
+                    <button><a href="http://127.0.0.1:5500/___LibraryManager/Content.html">Go</a></button>
+
+                </div>
+                <div class="categoryCard">
+                    <div class="categoryimage current">
+
+                    </div>
+                    <h2>Current Affaiars</h2>
+                    <button><a href="http://127.0.0.1:5500/___LibraryManager/Content.html">Go</a></button>
+
+                </div>
+                <div class="categoryCard">
+                    <div class="categoryimage spiritual">
+
+                    </div>
+                    <h2>Spiritual Section</h2>
+                    <button><a href="http://127.0.0.1:5500/___LibraryManager/Content.html">Go</a></button>
+
+                </div>
+                <div class="categoryCard">
+                    <div class="categoryimage programming">
+
+                    </div>
+                    <h2>Programming</h2>
+                    <button><a href="http://127.0.0.1:5500/___LibraryManager/Content.html">Go</a></button>
+
+                </div>
+                <div class="categoryCard">
+                    <div class="categoryimage news">
+
+                    </div>
+                    <h2>News-Papers</h2>
+                    <button><a href="http://127.0.0.1:5500/___LibraryManager/Content.html">Go</a></button>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="fourthPage">
+
+            <h1 class="AudioBooksHead" id="AudioBooks_Section">Audio Books</h1>
+
+
+            <div class="container">
+
+                <div class="card" style="--clr:#03a9f4">
+                    <div class="image">
+                        <img src="images/audiobook.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Book - <span>Book Name</span></h2>
+                        <h2>Author - <span>Author Name</span></h2>
+                        <h3>Description</h3>
+                        <p>Published on <span>dd-mm-yy</span> Available in 20 different languages. </p>
+                        <a href="#buyBooksHere">Buy/Rent</a>
+                    </div>
+
+                </div>
+
+
+                <div class="card" style="--clr:#03a9f4">
+                    <div class="image">
+                        <img src="images/audiobook.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Book - <span>Book Name</span></h2>
+                        <h2>Author - <span>Author Name</span></h2>
+                        <h3>Description</h3>
+                        <p>Published on <span>dd-mm-yy</span> Available in 20 different languages. </p>
+                        <a href="#buyBooksHere">Buy/Rent</a>
+                    </div>
+
+                </div>
+
+                <div class="card" style="--clr:#03a9f4">
+                    <div class="image">
+                        <img src="images/audiobook.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Book - <span>Book Name</span></h2>
+                        <h2>Author - <span>Author Name</span></h2>
+                        <h3>Description</h3>
+                        <p>Published on <span>dd-mm-yy</span> Available in 20 different languages. </p>
+                        <a href="#buyBooksHere">Buy/Rent</a>
+                    </div>
+
+                </div>
+                <div class="card" style="--clr:#009688">
+                    <div class="image">
+                        <img src="images/audiobook.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Book - <span>Book Name</span></h2>
+                        <h2>Author - <span>Author Name</span></h2>
+                        <h3>Description</h3>
+                        <p>Published on <span>dd-mm-yy</span> Available in 20 different languages. </p>
+                        <a href="#buyBooksHere">Buy/Rent</a>
+                    </div>
+
+                </div>
+                <div class="card" style="--clr:#009688">
+                    <div class="image">
+                        <img src="images/audiobook.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Book - <span>Book Name</span></h2>
+                        <h2>Author - <span>Author Name</span></h2>
+                        <h3>Description</h3>
+                        <p>Published on <span>dd-mm-yy</span> Available in 20 different languages. </p>
+                        <a href="#buyBooksHere">Buy/Rent</a>
+                    </div>
+
+                </div>
+                <div class="card" style="--clr:#009688">
+                    <div class="image">
+                        <img src="images/audiobook.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Book - <span>Book Name</span></h2>
+                        <h2>Author - <span>Author Name</span></h2>
+                        <h3>Description</h3>
+                        <p>Published on <span>dd-mm-yy</span> Available in 20 different languages. </p>
+                        <a href="#buyBooksHere">Buy/Rent</a>
+                    </div>
+
+                </div>
+                <div class="card" style="--clr:#ff3e7f">
+                    <div class="image">
+                        <img src="images/audiobook.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Book - <span>Book Name</span></h2>
+                        <h2>Author - <span>Author Name</span></h2>
+                        <h3>Description</h3>
+                        <p>Published on <span>dd-mm-yy</span> Available in 20 different languages. </p>
+                        <a href="#buyBooksHere">Buy/Rent</a>
+                    </div>
+
+                </div>
+                <div class="card" style="--clr:#ff3e7f">
+                    <div class="image">
+                        <img src="images/audiobook.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Book - <span>Book Name</span></h2>
+                        <h2>Author - <span>Author Name</span></h2>
+                        <h3>Description</h3>
+                        <p>Published on <span>dd-mm-yy</span> Available in 20 different languages. </p>
+                        <a href="#buyBooksHere">Buy/Rent</a>
+                    </div>
+
+                </div>
+                <div class="card" style="--clr:#ff3e7f">
+                    <div class="image">
+                        <img src="images/audiobook.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Book - <span>Book Name</span></h2>
+                        <h2>Author - <span>Author Name</span></h2>
+                        <h3>Description</h3>
+                        <p>Published on <span>dd-mm-yy</span> Available in 20 different languages. </p>
+                        <a href="#buyBooksHere" onclick="Click_action()">Buy/Rent</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    </div>
+
+    <footer id="footer">
+
+        <div class="smallCards">
+            <div class="smallCardDetails author-card">
+                <h4>Top Authors</h4>
+                <button>Visit Now</button>
+
+            </div>
+            <div class="smallCardDetails book-card">
+                <h4>Top Books</h4>
+                <button>Visit Now</button>
+
+            </div>
+            <div class="smallCardDetails poetry-card">
+                <h4>Poetry</h4>
+                <button>Visit Now</button>
+
+            </div>
+            <div class="smallCardDetails novel-card">
+                <h4>Novels</h4>
+                <button>Visit Now</button>
+
+            </div>
+            <div class="smallCardDetails audiobook-card">
+                <h4>Audio Books</h4>
+                <button>Visit Now</button>
+
+            </div>
+
+
+        </div>
+
+        <div class="UpdateSection">
+            <h1>Stay Updated</h1>
+            <div class="subscribe">
+                <input type="email" name="" id="subscribeId" placeholder="Enter Your Email"> <span id="subscribeButton"
+                    onclick="Subscribed()">Subscribe</span>
+
+            </div>
+
+        </div>
+        <div class="footerSection">
+            <div class=" footerlist socialLinks">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                    <li><a href="#" class="fa fa-pinterest"></a></li>
+                    <li><a href="#" class="fa fa-youtube"></a></li>
+                </ul>
+
+            </div>
+            <div class=" footerlist list1">
+                <h3>Browse</h3>
+
+                <ul>
+                    <li><a href="">New Release</a></li>
+                    <li><a href="">Top Charts</a></li>
+                    <li><a href="">Featured Books</a></li>
+                    <li><a href="">Novels</a></li>
+                    <li><a href="">Poems</a></li>
+                    <li><a href="">Magazines</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class=" footerlist list1">
+                <h3>Author Of the Month</h3>
+                <ul>
+                    <li><a href="">Author-Name</a></li>
+                    <li><a href="">Author-Name</a></li>
+                    <li><a href="">Author-Name</a></li>
+                    <li><a href="">Author-Name</a></li>
+                    <li><a href="">Author-Name</a></li>
+                    <li><a href="">Author-Name</a></li>
+                    <li><a href="">Author-Name</a></li>
+                    <li><a href="">Author-Name</a></li>
+                    <li><a href="">Author-Name</a></li>
+                    <li id="hidden"><a href="">Author-Name</a></li>
+                    <li id="hidden"><a href="">Author-Name</a></li>
+                    <li id="hidden"><a href="">Author-Name</a></li>
+                    <li id="hidden"><a href="">Author-Name</a></li>
+                    <li id="hidden"><a href="">Author-Name</a></li>
+                    <span class="material-symbols-outlined more" onclick="toggleHiddenElements()">
+                        expand_more
+                    </span>
+
+
+                </ul>
+
+            </div>
+            <div class=" footerlist list2">
+                <h3>Languages</h3>
+                <ul>
+                    <li>Hindi</li>
+                    <li>Punjabi</li>
+                    <li>English</li>
+                    <li>Tamil</li>
+                    <li>Telugu</li>
+                    <li>Malayalam</li>
+                    <li>Kannada</li>
+                    <li>Odiya</li>
+                    <li id="hidden">Other</li>
+                    <li id="hidden">Other</li>
+                    <li id="hidden">Other</li>
+                    <li id="hidden">Other</li>
+                    <li id="hidden">Other</li>
+                    <span class="material-symbols-outlined more" onclick="toggleHiddenElements()">
+                        expand_more
+                    </span>
+
+
+                </ul>
+
+            </div>
+
+            <div class="footerlist company">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Culture</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Advertisment</a></li>
+                    <li><a href="">Press</a></li>
+                    <li><a href="">Job</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Highlights</a></li>
+                </ul>
+            </div>
+
+
+
+        </div>
+        <div class="request">
+            <h1>Missed Something?</h1>
+            <h3>Drop Your Queries Here!!</h3>
+
+            <div class="requestbox">
+                <textarea name="" id="" cols="30" rows="10" class="Query" placeholder="Write something....."></textarea>
+                <input type="email" name="" id="" placeholder="Sender's e-mail... ">
+                <button>Send</button>
+
+            </div>
+
+
+        </div>
+
+        <div class="copyright">
+            <h3>© 2022 KlbTheme. All Rights Reserved. Contact Us on <a href=""></a>creatorxyz@gmail.com</h3>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

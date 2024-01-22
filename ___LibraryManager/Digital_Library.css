@@ -1,0 +1,1562 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  background-color: azure;
+}
+.whole {
+  overflow: hidden;
+}
+.frontPage {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: rgba(245, 245, 220, 0.555);
+  background-color: indigo;
+}
+.frontPage .upperMost {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #fff;
+  background-color: beige;
+  border-bottom: 1px solid #33333342;
+}
+.frontPage .upperMost .links {
+  height: 50px;
+  width: 150px;
+  /* border: 2px solid black; */
+}
+.frontPage .upperMost .links ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  align-items: center;
+  list-style-type: none;
+  justify-content: center;
+  gap: 10px;
+}
+.frontPage .upperMost .links ul .fa {
+  color: #fff;
+  background-color: #333;
+  /* transition: all 1s ease; */
+  opacity: 0.5;
+  font-size: 20px;
+  padding: 5px;
+}
+.frontPage .upperMost .links ul .fa-facebook {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.frontPage .upperMost .links ul .fa:hover {
+  color: white;
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+.frontPage .upperMost .links ul .fa-facebook:hover {
+  background: #3b5998;
+}
+
+.frontPage .upperMost .links ul .fa-twitter:hover {
+  background: #55acee;
+}
+
+.frontPage .upperMost .links ul .fa-linkedin:hover {
+  background: #007bb5;
+}
+
+.frontPage .upperMost .links ul .fa-instagram:hover {
+  background: #881235;
+}
+
+.frontPage .upperMost .headText {
+  height: auto;
+  width: auto;
+}
+.frontPage .upperMost .headText h3 {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #333333a1;
+  color: indigo;
+  opacity: 0.6;
+  filter: drop-shadow(0 0 2px #333);
+}
+.frontPage .upperMost .smallLinks ul {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.frontPage .upperMost .smallLinks ul li a {
+  text-decoration: none;
+}
+.frontPage .upperMost .smallLinks ul li a span {
+  padding: 5px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #333333a1;
+}
+.frontPage .upperMost .smallLinks ul li a span:hover {
+  color: #fff;
+  background-color: indigo;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.frontPage .secondUpper .up {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  position: relative;
+
+  /* border: 2px solid black; */
+}
+.frontPage .secondUpper .up .logo {
+  height: auto;
+  width: auto;
+}
+.frontPage .secondUpper .up .logo h1 {
+  padding: 10px;
+  color: indigo;
+  font-size: 40px;
+  text-shadow: 0 0 2px #333;
+}
+.frontPage .secondUpper .up .searchbar {
+  width: 30%;
+  height: fit-content;
+
+  /* border: 2px solid red; */
+}
+
+.frontPage .secondUpper .up .searchbar input {
+  width: 80%;
+  padding: 10px 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-size: 1rem;
+  color: indigo;
+  border: none;
+  outline: 1px solid #33333336;
+  background-color: transparent;
+}
+
+.frontPage .secondUpper .up .searchbar input:hover {
+  transition: all 0.7s ease;
+  cursor: text;
+  box-shadow: 0 0 4px #125688;
+}
+.frontPage .secondUpper .up .searchbar button {
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: indigo;
+  border: none;
+  outline: 1px solid indigo;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.frontPage .secondUpper .up .searchbar button:hover {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  background-color: indigo;
+  color: white;
+}
+
+.frontPage .secondUpper .up .myAccount {
+  height: 50px;
+  width: 180px;
+  text-align: center;
+  color: indigo;
+  background-color: beige;
+  border-radius: 5px;
+  padding: 5px;
+  opacity: 0.8;
+  box-shadow: 0 0 5px indigo;
+}
+.frontPage .secondUpper .up .myAccount span {
+  font-size: 40px;
+  font-weight: 200;
+  text-align: center;
+  margin: 0px 15px;
+}
+.frontPage .secondUpper .up .myAccount span:hover {
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.frontPage .secondUpper .up .myAccount:hover {
+  transition: all 0.5s ease;
+  cursor: pointer;
+  opacity: 1;
+  box-shadow: 0 0 5px #333;
+  background-color: indigo;
+  color: beige;
+}
+
+.frontPage .secondUpper .myAccountdiv {
+  position: absolute;
+  top: 185px;
+  right: 20px;
+  width: 300px;
+  height: 450px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px gray;
+  transition: all 0.3s ease;
+  display: none;
+  z-index: 1;
+}
+
+.frontPage .secondUpper .divHead {
+  height: 100px;
+  /* background-color: #007cb5ec; */
+  background-color: indigo;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  text-align: center;
+}
+
+.frontPage .secondUpper .divHead h3 {
+  padding: 10px;
+  color: white;
+  /* display: inline; */
+}
+.frontPage .secondUpper .divHead .headImage {
+  height: 80px;
+  width: 80px;
+  margin: auto;
+  transform: translateY(20px);
+  border-radius: 50%;
+}
+.frontPage .secondUpper .divHead .headImage img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.frontPage .secondUpper .divHead span {
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  float: right;
+  border-radius: 50%;
+  margin: 10px;
+  background-color: indigo;
+}
+
+.frontPage .secondUpper .divHead span:hover {
+  cursor: pointer;
+  background-color: white;
+  color: indigo;
+  transition: all 0.9s ease;
+}
+
+.frontPage .secondUpper .divBody {
+  height: 350px;
+  width: 100%;
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+}
+
+.frontPage .secondUpper .divBody h3 {
+  padding: 5px 10px;
+  font-size: 20px;
+  font-weight: 500;
+  transform: translateY(50px);
+}
+
+.frontPage .secondUpper .divBody h5 {
+  padding: 5px 10px;
+  color: gray;
+  font-weight: 200;
+  font-size: 15px;
+  transform: translateY(40px);
+}
+
+.frontPage .secondUpper .divBody .keys {
+  width: 100%;
+  height: 50px;
+  transform: translateY(50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  /* border: 2px solid red; */
+}
+
+.frontPage .secondUpper .keys span {
+  padding: 8px;
+  font-size: 20px;
+  color: white;
+  border-radius: 50%;
+  background-color: indigo;
+}
+
+.frontPage .secondUpper .keys span:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.frontPage .secondUpper .sync,
+.frontPage .secondUpper .manage,
+.frontPage .secondUpper .settings,
+.frontPage .secondUpper .guest,
+.frontPage .secondUpper .addMore {
+  height: 32px;
+  width: 100%;
+  transform: translateY(50px);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: gray;
+}
+
+.frontPage .secondUpper .sync:hover,
+.frontPage .secondUpper .manage:hover,
+.frontPage .secondUpper .addMore:hover,
+.frontPage .secondUpper .guest:hover {
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.333);
+  transition: all 1s ease;
+}
+
+.frontPage .secondUpper .sync p,
+.frontPage .secondUpper .manage p,
+.frontPage .secondUpper .settings p,
+.frontPage .secondUpper .addMore p,
+.frontPage .secondUpper .guest p {
+  display: inline;
+  padding: 0px 10px;
+}
+
+.frontPage .secondUpper .sync span,
+.frontPage .secondUpper .manage span,
+.frontPage .secondUpper .addMore span,
+.frontPage .secondUpper .guest span {
+  display: inline;
+  padding: 0px 10px;
+}
+
+.frontPage .secondUpper .divBody hr {
+  height: 2px;
+  width: 100%;
+  transform: translateY(60px);
+  background-color: rgba(128, 128, 128, 0.667);
+}
+
+.frontPage .secondUpper .settings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(60px);
+  color: black;
+}
+
+.frontPage .secondUpper .settings span {
+  font-size: 18px;
+  padding: 5px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.frontPage .secondUpper .settings span:hover {
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.244);
+}
+
+.frontPage .secondUpper .guest,
+.frontPage .secondUpper .addMore {
+  transform: translateY(60px);
+}
+
+.frontPage .secondUpper .navbar {
+  height: 8vh;
+  width: 100%;
+}
+.frontPage .secondUpper .navbar ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.frontPage .secondUpper .navbar ul li {
+  list-style: none;
+}
+.frontPage .secondUpper .navbar ul li a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  color: #fff;
+  border-bottom: 1px solid #33333342;
+}
+.frontPage .secondUpper .navbar ul li a:hover {
+  transition: all 0.5s ease;
+  color: beige;
+  cursor: pointer;
+  border-bottom: 1px solid #e8cfcf42;
+  box-shadow: 0 0px 2px beige;
+}
+.frontPage .FrontImage {
+  position: relative;
+  height: 450px;
+  width: 80%;
+  margin: auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  background-image: url(images/bgImage.png);
+  box-shadow: 0 0 5px beige;
+}
+.frontPage .FrontImage:hover {
+  box-shadow: 0 0 10px beige;
+  transition: all 0.5s ease;
+}
+.frontPage .FrontImage .articles {
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  padding: 20px;
+  outline: 1px solid #eee;
+  border-radius: 10px;
+  background-color: #ffffff8c;
+  /* background: transparent; */
+  top: 30%;
+  left: 10%;
+  backdrop-filter: blur(5px);
+}
+.frontPage .FrontImage .articles:hover {
+  background-color: #ffffffc3;
+
+  transition: all 1s ease;
+}
+.frontPage .FrontImage .articles h1 {
+  font-size: 40px;
+  color: indigo;
+  line-height: 32x;
+}
+.frontPage .FrontImage .articles p {
+  font-size: 15px;
+  font-weight: 200;
+  text-align: justify;
+  width: 200px;
+  padding: 10px;
+}
+.frontPage .FrontImage .articles button {
+  font-size: 20px;
+  background-color: transparent;
+  outline: 1px solid #333;
+  border: none;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: indigo;
+  font-weight: 200;
+  border-radius: 5px;
+}
+.frontPage .FrontImage .articles button a {
+  text-decoration: none;
+  color: indigo;
+}
+.frontPage .FrontImage .articles button:hover,
+.frontPage .FrontImage .articles button a:hover {
+  background-color: indigo;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+.frontPage .memberShip {
+  position: absolute;
+  width: 320px;
+  height: 500px;
+  right: 20px;
+  top: 160px;
+  z-index: 1;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(245, 245, 220, 0.539);
+  transform: scale(0.9);
+  visibility: hidden;
+}
+.frontPage .memberShip h2 {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 0px;
+  color: white;
+  width: 100%;
+
+  background: indigo;
+}
+.frontPage .memberShip .register {
+  height: 80px;
+  width: 100%;
+
+  background: indigo;
+}
+.frontPage .memberShip h3 {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+.frontPage .memberShip h3 span {
+  padding-bottom: 10px;
+}
+
+.frontPage .memberShip a {
+  display: block;
+  text-decoration: none;
+  color: indigo;
+  background-color: beige;
+  padding: 8px 16px;
+  width: fit-content;
+  margin: auto;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.frontPage .memberShip a:hover {
+  cursor: pointer;
+  outline: 2px solid beige;
+  color: beige;
+  transition: all 0.5s ease;
+  background-color: indigo;
+}
+.frontPage .memberShip input {
+  height: 30px;
+  width: 80%;
+  border: none;
+  padding: 20px 30px;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: indigo;
+  backdrop-filter: blur(5px);
+  background-color: rgba(128, 128, 128, 0.025);
+
+  box-shadow: 0 0 10px #33333336;
+  outline: 0.5px solid #33333336;
+  border-radius: 5px;
+}
+.frontPage .memberShip input::placeholder {
+  color: #33333360;
+}
+.frontPage .memberShip .checkbox {
+  text-align: center;
+  width: 100%;
+}
+.frontPage .memberShip .checkbox h3 {
+  color: indigo;
+}
+.frontPage .memberShip .checkbox input {
+  padding: 10px;
+  height: 10px;
+  width: 10px;
+  border: none;
+  outline: none;
+}
+.frontPage .memberShip .checkbox span {
+  color: indigo;
+  font-weight: 500;
+}
+.frontPage .memberShip .checkbox input:hover,
+.frontPage .memberShip .checkbox span:hover {
+  cursor: pointer;
+}
+.frontPage .memberShip button {
+  margin-left: 110px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  padding: 8px 24px;
+  font-size: 15px;
+  color: #333;
+  box-shadow: 0 0 3px #3333335f;
+}
+.frontPage .memberShip button:hover {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  background-color: indigo;
+  color: #fff;
+}
+
+/* Sign Up */
+
+.frontPage .sign-in {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 150px;
+  z-index: 55555555555;
+  height: 400px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 2px #33333332;
+  visibility: hidden;
+}
+.frontPage .sign-in h1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  color: white;
+  background-color: indigo;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.frontPage .sign-in .socialmediaicons {
+  height: 50px;
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.frontPage .sign-in .socialmediaicons ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.frontPage .sign-in .socialmediaicons ul li {
+  list-style-type: none;
+  padding: 5px;
+}
+.frontPage .sign-in .socialmediaicons ul li a {
+  text-decoration: none;
+  color: indigo;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  outline: 2px solid indigo;
+}
+.frontPage .sign-in .socialmediaicons ul li a:hover {
+  transition: all 0.5s ease;
+  background-color: indigo;
+  color: #fff;
+  cursor: pointer;
+}
+.frontPage .sign-in p {
+  padding: 10px;
+  font-weight: 600;
+  font-size: 15px;
+}
+.frontPage .sign-in input {
+  height: 40px;
+  width: 90%;
+  border: none;
+  outline: 1px solid #33333332;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 2px #33333332;
+}
+.frontPage .sign-in input::placeholder {
+  color: #33333340;
+  font-weight: 400;
+}
+.frontPage .sign-in p a {
+  font-size: 17px;
+  text-decoration: none;
+}
+.frontPage .sign-in p a:hover {
+  transition: all 0.5s ease;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.frontPage .sign-in button {
+  margin-top: 20px;
+  padding: 8px 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #3333335e;
+}
+
+.frontPage .sign-in button:hover {
+  background-color: indigo;
+  color: #fff;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.explorerPage {
+  min-height: 80vh;
+  width: 100%;
+}
+.explorerPage h1 {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  background: #333333ec;
+  background: beige;
+  color: #333;
+}
+.explorerPage .explorercards {
+  min-height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(images/expPage.jpeg);
+  background-image: url(images/exp2.jpg);
+  flex-wrap: wrap;
+}
+.explorerPage .explorercards .expCard {
+  height: 300px;
+  width: 200px;
+  position: relative;
+  margin: 30px 0px;
+  outline: 1px solid #eee;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 5px #fff;
+}
+.explorerPage .explorercards .expCard h2 {
+  color: beige;
+  padding: 10px;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  transform: translateX(-5%);
+}
+
+.explorerPage .explorercards .expCard button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 32px;
+  outline: 2px solid #fff;
+  border: none;
+  background-color: #ffffff1e;
+  color: gray;
+  box-shadow: 0 0 3px #ffffff3d;
+  border-radius: 10px;
+}
+.explorerPage .explorercards .expCard button:hover {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  background-color: #fff;
+  color: #333;
+}
+.explorerPage .explorercards .expCard:hover {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  /* background-color: #ffffff1e; */
+  backdrop-filter: blur(10px);
+}
+.explorerPage .explorercards .paraSection {
+  height: 400px;
+  width: 350px;
+  box-shadow: 0 0 5px #ffffff3d;
+  border-radius: 10px;
+  outline: 2px solid #ffffff3d;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(images/expPage.jpeg);
+  /* background: linear-gradient(#ffffff3d) url(images/expPage.jpeg); */
+}
+.explorerPage .explorercards .paraSection h2 {
+  padding: 10px;
+  text-align: start;
+  color: rgb(245, 245, 220);
+  font-size: 30px;
+}
+.explorerPage .explorercards .paraSection p {
+  padding: 10px;
+  text-align: justify;
+  color: #fff;
+  color: rgba(128, 128, 128, 0.824);
+  letter-spacing: 0.9px;
+  line-height: 20px;
+  width: 100%;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+}
+
+.secondPage {
+  /* height: 100vh; */
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px 100px;
+  padding: 100px 50px;
+  /* margin: 50px 30px; */
+
+  /* border: 2px solid red; */
+}
+
+.container .card {
+  position: relative;
+  width: 350px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+  transform: scale(0.9);
+}
+
+.container .card:hover {
+  height: 400px;
+}
+
+.container .card .image {
+  position: absolute;
+  top: 20px;
+  width: 300px;
+  height: 220px;
+  background-color: #333;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.container .card:hover .image {
+  top: -100px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.container .card .content {
+  position: absolute;
+  width: 100%;
+  padding: 0 30px;
+  text-align: center;
+  top: 252px;
+  height: 30px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.container .card:hover .content {
+  height: 250px;
+  top: 130px;
+}
+
+.container .card .content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--clr);
+}
+.container .card .content h3 {
+  font-size: large;
+}
+
+.container .card .content p {
+  color: #333;
+  font-size: 1.05em;
+}
+
+.container .card .content a {
+  position: relative;
+  top: 15px;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: var(--clr);
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: 0.5s;
+}
+
+.container .content h3 {
+  color: black;
+  font-size: 1rem;
+}
+
+.container .card .content a:hover {
+  transform: scale(0.9);
+}
+.secondPage .head {
+  height: 60px;
+  width: 450px;
+  /* background-color: white; */
+  border-radius: 10px;
+  margin-top: 20px;
+  /* border: 2px solid plum; */
+}
+.secondPage .head h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 5px 10px;
+  color: indigo;
+}
+.thirdPage {
+  width: 100%;
+  position: relative;
+}
+.thirdPage .heading {
+  height: 80px;
+  width: 300px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+
+  /* border: 2px solid red; */
+}
+.thirdPage .heading h1 {
+  padding: 10px 5px;
+  color: indigo;
+  text-shadow: 1px 1px 10px gray;
+}
+
+.CategoriesCards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem 2rem;
+  flex-wrap: wrap;
+  /* margin-left: 20px; */
+
+  /* border: 2px solid black; */
+}
+.categoryCard {
+  /* text-align: center; */
+  background-color: white;
+  height: 250px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #33333391;
+  transition: all 1s ease;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  /* border: 2px solid purple; */
+}
+.categoryCard:hover {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transform: translateY(-10px);
+  box-shadow: 0.5px 1px 10px 2px indigo;
+}
+.categoryimage {
+  height: 65%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-image: url(images/categoryCard.jpeg);
+}
+.categoryCard h2 {
+  text-align: center;
+  padding: 5px 10px;
+  color: indigo;
+  /* text-shadow: 1px 1px 10px gray; */
+}
+.categoryCard button {
+  margin: 5px 60px;
+  border-radius: 10px;
+  padding: 3px 25px;
+  color: indigo;
+  text-decoration: none;
+  font-size: 1rem;
+  background-color: transparent;
+  transition: 0.5s;
+  border: 1px solid rgba(76, 0, 130, 0.568);
+}
+.categoryCard button a {
+  text-decoration: none;
+}
+.categoryCard button a:hover {
+  cursor: pointer;
+  background-color: indigo;
+  color: white;
+}
+.categoryCard button:hover {
+  transform: scale(0.8);
+  cursor: pointer;
+  background-color: indigo;
+  color: white;
+  border: none;
+}
+.novel {
+  background-image: url(images/novel.jpeg);
+}
+.story {
+  background-image: url(images/story.png);
+}
+.sci-fi {
+  background-image: url(images/sci-fi.webp);
+}
+.bio {
+  background-image: url(images/bio.webp);
+}
+.history {
+  background-image: url(images/history.jpeg);
+}
+.geo {
+  background-image: url(images/geo.webp);
+}
+.bio {
+  background-image: url(images/bio.webp);
+}
+.politics {
+  background-image: url(images/politics.jpeg);
+}
+.comics {
+  background-image: url(images/comics.jpg);
+}
+.magazine {
+  background-image: url(images/magazine.jpg);
+}
+.encyclopedia {
+  background-image: url(images/encyclopedia.jpg);
+}
+.current {
+  background-image: url(images/cureent.jpeg);
+}
+.spiritual {
+  background-image: url(images/spiritual.jpg);
+}
+.programming {
+  background-image: url(images/programming.jpeg);
+}
+.news {
+  background-image: url(images/news.jpg);
+}
+
+.fourthPage {
+  width: 100%;
+}
+
+.AudioBooksHead {
+  font-size: 2.4em;
+  /* padding: 0px 40px; */
+  color: indigo;
+  margin-left: 50px;
+  margin-top: 20px;
+  text-shadow: 0 0 5px gray;
+}
+
+.regreetBox h3 {
+  text-align: center;
+  padding: 10px 5px;
+  font-size: 2rem;
+  color: indigo;
+  text-shadow: 1px 1px 10px white;
+}
+
+.regreetBox {
+  width: 400px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 1px 1px 10px 0.5px white;
+  background-color: rgb(247, 234, 234);
+  background-color: #03a9f4;
+}
+
+.regreetBox span {
+  padding: 10px 5px;
+  font-size: 1.2rem;
+  color: black;
+}
+.regreetBox input {
+  padding: 10px 60px;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  box-shadow: 1px 2px 10px 0.4px white;
+}
+.regreetBox input::placeholder {
+  opacity: 0.8;
+  color: gray;
+}
+.regreetBox button {
+  padding: 8px 20px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 1px 1px 5px 0.5px white;
+  transition: 0.5s;
+  color: purple;
+  background-color: #0bb9a7;
+}
+.regreetBox button:hover {
+  cursor: pointer;
+  transform: scale(0.9) translateY(-10px);
+  box-shadow: inset 1px 1px 5px 0.5px white;
+}
+
+#footer {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(42, 45, 54);
+  /* background-image: linear-gradient(rgba(128, 128, 128, 0.79),transparent
+    ), url(images/footer.jpeg); */
+}
+
+.smallCards {
+  /* height: 200px; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* border: 1px solid red; */
+}
+
+.smallCardDetails {
+  height: 150px;
+  width: 250px;
+  margin: 20px 0px;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  content-visibility: hidden;
+  /* border: 2px solid blue; */
+}
+.smallCardDetails button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  bottom: 5px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: red;
+  box-shadow: 0 0 10px black;
+  font-size: 1rem;
+  animation-name: ButtonAnimation;
+  /* animation: ButtonAnimation 2s ease infinite; */
+}
+.smallCardDetails button:hover {
+  cursor: pointer;
+  /* transform: translateX(-50%); */
+  transition: all 1s ease;
+  color: red;
+  background-color: white;
+  transform: translateX(-50%) translateY(-5px);
+}
+@keyframes ButtonAnimation {
+  0% {
+    transform: translateY(-5px);
+    transition: all 0.5s ease-out;
+  }
+
+  100% {
+    transform: translateY(5px);
+    transition: all 0.5s ease-in;
+  }
+}
+
+.author-card {
+  background-image: url(images/author.jpeg);
+}
+.novel-card {
+  background-image: url(images/novelIndia.jpeg);
+}
+.book-card {
+  background-image: url(images/book.jpeg);
+}
+.poetry-card {
+  background-image: url(images/poem.jpg);
+}
+.audiobook-card {
+  background-image: url(images/audiobook.webp);
+}
+
+.smallCardDetails h4 {
+  color: red;
+  /* text-shadow: 1px 2px 3px red; */
+  font-size: 20px;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.473);
+}
+
+.smallCardDetails:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 15px 5px rgba(128, 128, 128, 0.79);
+  overflow: none;
+  transform: translateY(-10px);
+  content-visibility: visible;
+  transition: all 1.2s ease;
+}
+
+.UpdateSection {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* border: 2px solid red; */
+}
+
+.UpdateSection h1 {
+  /* font-size: 20px; */
+  padding: 5px 10px;
+  color: white;
+  text-shadow: 1px 2px 3px rgba(128, 0, 128, 0.694);
+}
+
+.subscribe {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+
+  /* border: 2px solid red; */
+}
+
+.subscribe input {
+  padding: 15px 75px;
+  border: none;
+  outline: none;
+  margin: 10px 0px;
+  color: white;
+  /* font-size: 20px; */
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-shadow: 1px 1px 5px 1px rgba(128, 0, 128, 0.694);
+}
+
+.subscribe span {
+  font-size: 15px;
+  padding: 15px 20px;
+  color: white;
+  margin-top: 8px;
+  background-color: coral;
+}
+
+.subscribe span:hover {
+  cursor: pointer;
+  border-top-right-radius: 20px;
+  transition: all 1s ease;
+}
+
+.footerSection {
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 5rem;
+  /* text-align: justify; */
+  margin: 10px 0px;
+  text-align: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.footerlist ul {
+  text-align: center;
+}
+
+.footerlist h3 {
+  padding: 5px 10px;
+  color: white;
+  text-shadow: 1px 2px 3px rgba(128, 0, 128, 0.694);
+}
+
+.footerlist ul li {
+  list-style: none;
+  padding: 5px 10px;
+  color: white;
+}
+
+.footerlist ul li a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+  /* color: cadetblue; */
+}
+
+.footerlist ul li a:hover {
+  color: coral;
+  transition: all 1s ease;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.list1,
+.list2 {
+  position: relative;
+}
+
+.list1 ul span,
+.list2 ul span {
+  /* text-align: center; */
+  font-size: 2rem;
+  position: absolute;
+  left: 50%;
+  color: coral;
+  margin-bottom: 20px;
+  transform: translateX(-50%);
+  animation-name: spanAnimation;
+  animation: spanAnimation 1s ease infinite;
+}
+
+.list1 ul span:hover,
+.list2 ul span:hover {
+  cursor: pointer;
+  animation: none;
+}
+
+@keyframes spanAnimation {
+  0% {
+    transform: translateY(-10px);
+    transition: all 0.5s ease-out;
+  }
+
+  25% {
+    transform: translateY(-5px);
+    transition: all 0.5s ease-out;
+  }
+
+  50% {
+    transform: translateY(5px);
+    transition: all 0.5s ease-in;
+  }
+
+  75% {
+    transform: translateY(5px);
+    transition: all 0.5s ease-in;
+  }
+
+  100% {
+    transform: translateY(5px);
+    transition: all 0.5s ease-in;
+  }
+}
+
+.request {
+  position: absolute;
+  height: 500px;
+  width: 100px;
+  right: 0;
+  top: 30%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  content-visibility: none;
+  background-color: coral;
+  content-visibility: hidden;
+  transition: all 2s ease;
+  border-radius: 10px;
+}
+
+.request h1,
+.request h3 {
+  padding: 5px 10px;
+  color: white;
+}
+
+.request h1 {
+  margin-top: 20px;
+  text-shadow: 1px 2px 3px rgba(197, 177, 197, 0.694);
+}
+
+.request:hover {
+  overflow: visible;
+  cursor: pointer;
+  width: 500px;
+  transition: all 2s ease;
+  content-visibility: visible;
+}
+
+.requestbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.Query {
+  border: none;
+  outline: none;
+  padding: 15px 60px;
+  text-align: center;
+  color: purple;
+  border-radius: 10px;
+  resize: none;
+  box-shadow: 1px 1px 5px 1px white;
+}
+
+.requestbox input {
+  display: block;
+  border: none;
+  outline: none;
+  padding: 15px 60px;
+  margin: 10px 0px;
+  text-align: center;
+  color: purple;
+  box-shadow: 1px 1px 5px 1px white;
+  border-radius: 10px;
+}
+
+.requestbox button {
+  text-align: center;
+  padding: 8px 30px;
+  border: none;
+  outline: none;
+  color: coral;
+  border-radius: 20px;
+}
+
+.requestbox button:hover {
+  color: white;
+  background-color: coral;
+  cursor: pointer;
+  transition: all 1s ease;
+  box-shadow: 1px 1px 5px 1px white;
+}
+
+.socialLinks ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 10px;
+}
+
+.socialLinks ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.fa {
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.copyright {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+
+.copyright h3 {
+  font-size: 1.3rem;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  color: gray;
+}
+
+#hidden {
+  display: none;
+  transition: all 1s ease;
+}

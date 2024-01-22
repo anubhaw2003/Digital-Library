@@ -1,0 +1,478 @@
+
+
+
+
+
+
+
+.footer{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: last center ;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+}
+
+.links_others {
+    height: 20%;
+    width: 40%;
+
+    /* border: 2px solid red; */
+}
+
+.list{
+    height: 100%;
+    width: 100%;
+    border: 2px solid red;
+
+}
+.list ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.list ul li{
+    list-style: none;
+
+}
+.list ul li a, .credits p a{
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 8px 10px;
+    color: purple;
+    transition: all ease .5s;
+    border: 3px solid plum;
+    box-shadow: .5px -1px 5px 1px white;
+    border-radius: 10px;
+    border-right-style: dashed;
+    border-top-color: transparent;
+}
+.list ul li a:hover{
+    cursor: pointer;
+    color: #ff3e7f;
+    background-color: white;
+    transform: scale(.9) translateY(-10px) ;
+
+}
+@keyframes link_animation {
+    0%{
+        border-right-style: dashed; 
+    }
+    
+    25%{
+        border-top-style: dashed; 
+    }
+    50%{
+        border-left-style: dashed; 
+    }
+    75%{
+        border-bottom-style: dashed; 
+    }
+
+    100%{
+    border: none;
+    }
+}
+
+.credits{
+    height: 100px;
+    width: 100%;
+    /* border: 2px solid blue; */
+}
+.credits p{
+    font-size: 1.1rem;
+    color: purple;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 10px 5px;
+}
+.credits p a{
+    padding: 4px 5px;
+    font-size: 1rem;
+    margin-left: 10px;
+    color: purple;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+}
+
+
+
+
+
+.chat_with_us{
+    width: 40%;
+    height: 100%;
+    /* border:1px solid #03a9f4; */
+}
+.chat_with_us h1{
+    font-size: 2rem;
+    padding: 10px 4px;
+    text-align: center;
+}
+
+.chat-container {
+    width: 400px;
+    height: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    /* border: 1px solid blue; */
+}
+
+.chat-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-body {
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.chat-message.bot {
+    background-color: #f1f1f1;
+    width: fit-content;
+    
+}
+
+.chat-message.user {
+    background-color: #4CAF50;
+    width: fit-content;
+    color: white;
+    float: right;
+}
+
+.chat-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 98%;
+    position: absolute;
+    bottom: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chat-input button {
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+ <!-- 
+            <div class="regreetBox">
+
+                <h3>Requet a book here!</h3>
+                <span>Book</span><input type="text" name="" id="" placeholder="Enter the Book Name">
+                <span>Author</span><input type="text" name="" id="" placeholder="Enter the Author's Name">
+                <span>Language</span><input type="text" name="" id="" placeholder="Language Preference">
+                <button onclick="requestSent()">Request</button>
+
+
+            </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             
+                    <div class="myAccountdiv" id="AccountDiv">
+                        <div class="divHead">
+                            <h3>Person1</h3>
+                            <span class="material-symbols-outlined">
+                                edit
+                            </span>
+
+                            <div class="headImage">
+
+                            </div>
+
+                        </div>
+                        <div class="divBody">
+                            <h3>Account holder Name</h3>
+                            <h5>Account holder Email</h5>
+                            <div class="keys">
+                                <span class="material-symbols-outlined">
+                                    key
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    location_on
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    credit_card
+                                </span>
+
+                            </div>
+
+                            <div class="sync">
+
+                                <span class="material-symbols-outlined">
+                                    sync
+                                </span>
+                                <p>Sync Accounts </p>
+
+
+                            </div>
+                            <div class="manage">
+                                <span class="material-symbols-outlined">
+                                    manage_accounts
+                                </span>
+                                <p>Manage Your Accounts</p>
+
+                            </div>
+                            <hr>
+                            <div class="otherProfiles">
+                                <div class="settings">
+                                    <p>Other Profiles</p>
+                                    <span class="material-symbols-outlined">
+                                        settings
+                                    </span>
+
+                                </div>
+                                <div class="guest">
+                                    <span class="material-symbols-outlined">
+                                        person
+                                    </span>
+                                    <p>Guest</p>
+
+
+
+                                </div>
+                                <div class="addMore">
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                    <p>add</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    
+.myAccountdiv {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px gray;
+    transition: all .3s ease;
+    display: none;
+    z-index: 1;
+   
+}
+
+.divHead {
+    height: 100px;
+    background-color: #007cb5ec;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    text-align: center;
+}
+
+.divHead h3 {
+    padding: 10px;
+    color: white;
+    /* display: inline; */
+}
+
+.divHead span {
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    float: right;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: #007bb5;
+}
+
+.divHead span:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #007bb5;
+    transition: all .9s ease;
+
+}
+
+.divBody {
+    height: 350px;
+    width: 100%;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+
+}
+
+.divBody h3 {
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 500;
+    transform: translateY(50px);
+
+}
+
+.divBody h5 {
+
+    padding: 5px 10px;
+    color: gray;
+    font-weight: 200;
+    font-size: 15px;
+    transform: translateY(40px);
+}
+
+.divBody .keys {
+    width: 100%;
+    height: 50px;
+    transform: translateY(50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    /* border: 2px solid red; */
+
+}
+
+.keys span {
+    padding: 8px;
+    font-size: 20px;
+    color: white;
+    border-radius: 50%;
+    background-color: #007bb5;
+
+}
+
+.keys span:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.sync,
+.manage,
+.settings,
+.guest,
+.addMore {
+    height: 32px;
+    width: 100%;
+    transform: translateY(50px);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: gray;
+
+}
+
+.sync:hover,
+.manage:hover,
+.addMore:hover,
+.guest:hover {
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.333);
+    transition: all 1s ease;
+}
+
+.sync p,
+.manage p,
+.settings p,
+.addMore p,
+.guest p {
+    display: inline;
+    padding: 0px 10px;
+
+}
+
+.sync span,
+.manage span,
+.addMore span,
+.guest span {
+    display: inline;
+    padding: 0px 10px;
+}
+
+.divBody hr {
+    height: 2px;
+    width: 100%;
+    transform: translateY(60px);
+    background-color: rgba(128, 128, 128, 0.667);
+
+}
+
+.settings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(60px);
+    color: black;
+}
+
+.settings span {
+    font-size: 18px;
+    padding: 5px;
+    margin-right: 20px;
+    border-radius: 50%;
+
+}
+
+.settings span:hover {
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.244);
+}
+
+.guest,
+.addMore {
+    transform: translateY(60px);
+
+}
